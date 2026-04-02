@@ -55,6 +55,11 @@ function editUser(index) {
   const newName = prompt("Nuevo nombre:");
   const newEmail = prompt("Nuevo email:");
 
+  if (!newName || !newEmail) {
+  alert("Datos inválidos");
+  return;
+}
+
   users[index] = { name: newName, email: newEmail };
   render();
 }
