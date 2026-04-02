@@ -1,14 +1,18 @@
 body {
-  font-family: Arial;
-  padding: 20px;
+  background-color: lch(44.48% 5.91 20.09);
+}
+
+h1, h2 {
+  color: #fffefe;
+}
+
+button {
+  background-color: hsl(211, 42%, 59%);
+  color: white;
+  border: none;
 }
 
 input {
   margin: 5px;
   padding: 5px;
-}
-
-button {
-  padding: 5px 10px;
-  cursor: pointer;
 }
