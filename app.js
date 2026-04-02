@@ -28,6 +28,11 @@ function addUser() {
     return;
   }
 
+  if (!email.includes("@")) {
+  alert("Email inválido");
+  return;
+}
+
   users.push({ name, email });
   render();
 }
