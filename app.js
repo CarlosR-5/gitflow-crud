@@ -35,6 +35,21 @@ function render() {
     list.innerHTML += `
       <li>
         ${u.name} - ${u.email}
+        <button onclick="editUser(${i})">Editar</button>
+        <button onclick="deleteUser(${i})">Eliminar</button>
       </li>`;
   });
+}
+
+function editUser(index) {
+  const newName = prompt("Nuevo nombre:");
+  const newEmail = prompt("Nuevo email:");
+
+  users[index] = { name: newName, email: newEmail };
+  render();
+}
+
+function deleteUser(index) {
+  users.splice(index, 1);
+  render();
 }
